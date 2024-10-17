@@ -1,0 +1,56 @@
+/* Setting Blue background and Yellow text */
+body {
+    background-color: blue;
+    color: yellow;
+}
+/* Setting title as center and yellow */
+h1 {
+    text-align: center;
+    color: yellow;
+}
+/* Nav Bar background color yellow and font size */
+td {
+    color: yellow;
+    font-size: 30px;
+}
+/* Nav Bar Styles */
+#navbar {
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    background-color: blue;
+}
+/* Nav Bar link color */
+a:link {
+    color: yellow ;    
+    text-decoration: none;
+}
+
+/* Nav Bar link color when visited */
+a:visited {
+    color: yellow;  
+    text-decoration: none;
+}
+/*Nav Bar link when mouse is hovering over color */
+a:hover {
+    color: white;         
+    text-decoration: underline; 
+}
+/* Nav Bar link when link is active */
+a:active {
+    color: yellow;        
+    text-decoration: underline; 
+}
+/*Flexbox for Application Page. Contains information about fall and spring elections. Turned into a chart. */
+.elections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    padding: 20px;
+}
+
+.fall-elections, .spring-elections {
+    background-color: blue;
+    padding: 15px;
+    border-radius: 8px;
+}
