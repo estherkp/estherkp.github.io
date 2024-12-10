@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!-- Specifies characters encoding in HTML-->
+	<link rel="icon" type="image/png" href="proimages/logo.png"> <!--displays title of page in browser -->
+	<title>Home - Swinson's Commercial Cleaning</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- links html to css --> 
+
+
+</head>
+<body>
+	<header>
+		<nav>
+          <!-- put things for easy navigation access & -->
+             
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="procontact.html">Contact</a></li>
+				<li><a href="propaswor.html">Past Work</a></li>
+                <li><a href="proser.html">Services</a></li>
+			</ul>
+	        
+
+			
+		</nav>
+	</header>
+	<main> <!-- Sort of like an introduction header but not a title so you can know what's going on in the page. Making paths so it knows to draw the image from a certain folder. classifying it for css later on. Giving a rudown on our business & how we operate almost like an elevator pitch-->
+		<h1>Welcome to Swinson's Commercial Cleaning</h1>
+		<div class="content">
+			<p>Here at Swinson's Commercial Cleaning, we understand the significance of maintaining a clean envionment for your property & business. Having a well-kept space will not only enhances your professional image for customers & stores, but it also adds to a healthier workplace for employees and clients. Our team employs specialized cleaning techniques and environment friendly products to ensure exceptional results. We feel that cleanliness is essential to the success of your property, so we are dedicated to helping you reach that level.</p>
+			<img src="proimages/cleaning-service.jpeg" alt="Swinson Index Cleaning" class="cleaning-image" />
+		</div>
+		<!--Button for Motivational Quote (AJAX Request) -->
+		<h2>Motivational Quote</h2>
+        <div id="quote-container">
+            <p>Click the button below to fetch a motivational quote!</p>
+        </div>
+        <button id="fetch-quote">Fetch Quote</button>
+		<h2>Why Choose Us?</h2>
+		<div class="content">
+			<p>Choosing Swinson's Commercial Cleaning means that you are choosing a place of skill & quality. Our trained workers are equipped to handle a variety of spaces, from work cubicles & small offices to apartment complexes & shopping centers. We focus on each task we have to ensure nothing is left dirty. With our services, your property will be consistently inviting and spotless, leading to satisfied & impressed clients.</p>
+		</div> <!--button to increase a better looking page & making sure correct links are there for travelling. Subscription application for customers to enter into a partnership. Email input fields-->
+		<button onclick="location.href='proser.html'">View Our Services</button>
+		<form>
+			<label for="subscribe-email">Subscribe for updates:</label>
+			<input type="email" id="subscribe-email" name="subscribe-email" required>
+			<button type="submit">Subscribe</button>
+		</form>
+	</main>
+	<footer> <!--here for copyright purposes & to validate links-->
+		<p>&copy; 2024 Swinson's Commercial Cleaning. All rights reserved.</p>
+		<p><a href="https://validator.w3.org/check?uri=referer">HTML Validation</a> | <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS Validation</a></p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> <!--loading the library so I can access it-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script> <!--picking the specific source=lightbox that I want to use-->
+
+    
+	<script src="js/scripts.js"></script> <!--correct pathway to connect and access files-->
+</body>
+</html>
