@@ -1,0 +1,99 @@
+body{
+	font-family: Georgia, sans-serif; /*more unique and clean feeling font for customer pleasure*/
+	line-height: 1.6; /*better space in between lines so customers can read better*/
+	margin: 0;
+	padding: 0;
+	background-color: #6495ED; /* fuzzy feeling for background, can effect customer ethos*/
+}
+
+header{
+	background: #D2691E;
+	color: #FFFAF0; /*easier for reading purposes*/
+	padding: 10px 0; /* helped my spacing for a better visual, tried to avoid cluster for customer eyes */
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline;   /* helps show items inline */
+	margin-right: 20px;
+}
+
+nav ul li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1, h2{
+	color: #35424a; /*  consistent layout */
+}
+
+main{
+	max-width:800px; /* helps for customers to read*/
+	margin: 20px auto;
+	padding: 20px; /* helps with white space*/
+	background: #ffffff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* better design when working on page*/
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.content{
+	display: grid; /* tried to line photos up perfectly in grid instead of on top*/
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.cleaning-image, .contact-image, .service-image, .work-image{
+	max-width: 100%;
+	height: auto; 
+	display: block; /*keeping same shape for images*/
+	margin: 20px 0;
+}
+
+.image-gallery{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+form{
+	margin: 20px 0; /*to give forms space*/
+}
+
+label{
+	display: block; /* easily helps you see with this*/
+	margin: 10px 0 5px;
+}
+
+input, textarea, button{
+	width: 100%; /*setting changings for buttons & my inputs*/
+	padding: 10px;
+	margin-bottom: 20px; /*making sure there's space*/
+}
+
+button{
+	background: #35424a;
+	color: #ffffff;
+	border: none;
+	cursor: pointer; /*helps customer know it's pressable*/
+}
+
+button:hover{
+	background: #e8491d; /* appropiate change for when you go over it*/
+}
+
+footer{
+	text-align: center; /* felt it would look more structured with a sort of symmetrical feel*/
+	padding: 20px 0;
+	background: #35424a; /* darker feel so you can see & comprehend the bottom of the page*/
+	color: #ffffff;
+	position: relative; /* helped control footer */
+	bottom: 0;
+	width: 100%; /* expansion */
+}
+
